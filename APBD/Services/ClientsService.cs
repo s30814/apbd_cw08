@@ -7,7 +7,7 @@ namespace APBD.Services
     {
         private readonly string _connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Integrated Security=True;";
 
-
+        //
         public async Task<bool> ClientExistsAsync(int idClient)
         {
             using (var connection = new SqlConnection(_connectionString))
